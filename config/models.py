@@ -36,7 +36,7 @@ class Configuration(Register, SingletonModel):
     """
     Configuration
     """
-    site_name = models.CharField(verbose_name='Name', max_length=18, default='CellFixStore')
+    site_name = models.CharField(verbose_name='Name', max_length=18, default='Tecnicyl')
     site_logo_mini = models.ImageField(verbose_name='Logo Mini', upload_to="logos", blank=True, null=True)
     order_code_sequence = models.IntegerField(verbose_name='Code Sequence for Work Orders',
                                               default=1, validators=[MaxValueValidator(999999999)])

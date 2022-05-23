@@ -60,7 +60,7 @@
             {% if settings.site_name %}
                 <span class="brand-text font-weight-light">{{ settings.site_name }}</span>
             {% else %}
-                <span class="brand-text font-weight-light">CellFixStore</span>
+                <span class="brand-text font-weight-light">Tecnicyl</span>
             {% endif %}
         </a>
 
@@ -91,25 +91,25 @@
                     <li class="nav-item">
                         <a href="{% url 'order:list' %}" class="nav-link  {% active 'order/list|order/create|order/update|order/delete' %}">
                             <i class="nav-icon fas fa-list-ul"></i>
-                            <p>Work Orders</p>
+                            <p>Ordenes de trabajo</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="{% url 'client:list' %}" class="nav-link  {% active 'client/list|client/create|client/update|client/delete' %}">
                             <i class="nav-icon fas fa-users"></i>
-                            <p>Clients</p>
+                            <p>Clientes</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="{% url 'product:list' %}" class="nav-link  {% active 'product/list|product/create|product/update|product/delete' %}">
                             <i class="nav-icon fas fa-shopping-cart"></i>
-                            <p>Products and Services</p>
+                            <p>Productos y Servicios</p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="{% url 'config:general' 1 %}" class="nav-link {% active 'config' %}">
                             <i class="nav-icon fas fa-cog"></i>
-                            <p>Configuration</p>
+                            <p>Configuracion</p>
                         </a>
                     </li>
                 </ul>
@@ -149,9 +149,9 @@
 
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-        <strong>Copyright &copy; {% now "Y" %} CellFixStore</strong>
+        <strong>Copyright &copy; {% now "Y" %} Tecnicyl</strong>
         <div class="float-right d-none d-sm-inline-block">
-            <b>Version</b> 1.2.0
+            <b>Version</b> beta 1.0.0
         </div>
     </footer>
 </div>

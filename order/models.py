@@ -29,7 +29,7 @@ class Order(Register):
     date_out = models.DateField(verbose_name="End Date", blank=True, null=True)
     imei = models.CharField(verbose_name="IMEI", max_length=200, blank=True, null=True)
     state = models.CharField(verbose_name="State", max_length=10, default="received", choices=STATES)
-    client = models.ForeignKey(Client, verbose_name="Client", on_delete=models.CASCADE, blank=True, null=True)
+    client = models.ForeignKey(Client, verbose_name="Cliente", on_delete=models.CASCADE, blank=True, null=True)
     service = models.ManyToManyField(Product, verbose_name="Service")
     lock_code = models.CharField(verbose_name="Unlock Code", max_length=100, blank=True, null=True)
     total_value = models.DecimalField(verbose_name="Total Value", max_digits=6, decimal_places=2,

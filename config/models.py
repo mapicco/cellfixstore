@@ -36,14 +36,14 @@ class Configuration(Register, SingletonModel):
     """
     Configuration
     """
-    site_name = models.CharField(verbose_name='Name', max_length=18, default='Tecnicyl')
+    site_name = models.CharField(verbose_name='Nombre', max_length=18, default='Tecnicyl')
     site_logo_mini = models.ImageField(verbose_name='Logo Mini', upload_to="logos", blank=True, null=True)
-    order_code_sequence = models.IntegerField(verbose_name='Code Sequence for Work Orders',
+    order_code_sequence = models.IntegerField(verbose_name='Secuencia de ordenes de trabajo',
                                               default=1, validators=[MaxValueValidator(999999999)])
 
     class Meta:
-        verbose_name = "Configuration"
-        verbose_name_plural = "Configurations"
+        verbose_name = "Configuracion"
+        verbose_name_plural = "Configuraciones"
 
     def __str__(self):
-        return "Configuration"
+        return "Configuracion"

@@ -8,6 +8,7 @@ from .managers import CustomUserManager
 class CustomUser(AbstractUser):
     username = None
     email = models.EmailField(_('email address'), unique=True)
+    first_name = models.CharField(verbose_name='Nombre',max_length=50, default=' ')
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
@@ -15,4 +16,4 @@ class CustomUser(AbstractUser):
     objects = CustomUserManager()
 
     def __str__(self):
-        return self.email
+        return self.first_name

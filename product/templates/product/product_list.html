@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Products and Services{% endblock title %}
+{% block title %}Productos y Servicios{% endblock title %}
 
 {% block css %}
 
@@ -12,7 +12,7 @@
 
 {% block content-header %}
 
-    <h1>List of Products and Services</h1>
+    <h1>Productos y Servicios</h1>
 
 {% endblock content-header %}
 
@@ -23,7 +23,7 @@
             <div class="row">
                 <div class="col-xs-4 col-sm-4 col-md-6">
                     <a href="{% url 'product:create' %}">
-                        <div class="btn btn-primary"><span class="fa fa-plus"> <span class="btn-custom-font">Create</span></span></div>
+                        <div class="btn btn-primary"><span class="fa fa-plus"> <span class="btn-custom-font">Crear</span></span></div>
                     </a>
                 </div>
                 <div class="box-tools col-xs-8 col-sm-8 col-md-6">
@@ -36,9 +36,9 @@
             <table id="products_datatable" class="table table-hover">
                 <thead>
                 <tr>
-                    <th>Code</th>
-                    <th>Name</th>
-                    <th>Value</th>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Valor</th>
                     <th></th>
                 </tr>
                 </thead>

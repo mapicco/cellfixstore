@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Products and Services{% endblock title %}
+{% block title %}Productos y Servicios{% endblock title %}
 
 {% block css %}{% endblock css %}
 
 {% block content-header %}
 
-    <h1>Delete Product or Service</h1>
+    <h1>Eliminar producto o servicio</h1>
 
 {% endblock content-header %}
 
@@ -20,7 +20,7 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 form-group">
-                        <b>Are you sure you want to remove the product or service: {{ object.name }}?</b>
+                        <b>Seguro que desea eliminar el producto o servicio: {{ object.name }}?</b>
                     </div>
                 </div>
             </div>
@@ -28,9 +28,9 @@
 
         <div class="box-footer" style="text-align: right">
             <a href="{% url 'product:list' %}">
-                <div class="btn btn-default"><span class="fas fa-ban"> <span class="btn-custom-font">Cancel</span></span></div>
+                <div class="btn btn-default"><span class="fas fa-ban"> <span class="btn-custom-font">Cancelar</span></span></div>
             </a>
-            <button type="submit" class="btn btn-danger"><span class="fas fa-trash"> <span class="btn-custom-font">Delete</span></span></button>
+            <button type="submit" class="btn btn-danger"><span class="fas fa-trash"> <span class="btn-custom-font">Eliminar</span></span></button>
         </div>
     </form>
 

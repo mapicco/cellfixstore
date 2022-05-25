@@ -8,9 +8,9 @@
 {% block content-header %}
 
     {% if not form.instance.pk %}
-        <h1>New Product or Service</h1>
+        <h1>Nuevo Producto o Servicio</h1>
     {% else %}
-        <h1>Update Product or Service: {{ object.name }}</h1>
+        <h1>Actualizar Producto o Servicio: {{ object.name }}</h1>
     {% endif %}
 
 {% endblock content-header %}
@@ -58,9 +58,9 @@
 
         <div class="box-footer" style="text-align: right">
             <a href="{% url 'product:list' %}">
-                <div class="btn btn-default"><span class="fas fa-ban"> <span class="btn-custom-font">Cancel</span></span></div>
+                <div class="btn btn-default"><span class="fas fa-ban"> <span class="btn-custom-font">Cancelar</span></span></div>
             </a>
-            <button type="submit" class="btn btn-primary"><span class="fas fa-save"> <span class="btn-custom-font">Save</span></span></button>
+            <button type="submit" class="btn btn-primary"><span class="fas fa-save"> <span class="btn-custom-font">Guardar</span></span></button>
         </div>
     </form>
 

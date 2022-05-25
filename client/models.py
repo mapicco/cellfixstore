@@ -14,7 +14,7 @@ class Client(Register):
     address = models.CharField(verbose_name="Direccion", max_length=250)
 
     def __str__(self):
-        return self.name
+        return  self.surname + ', ' + self.name
 
     class Meta:
         verbose_name = "Cliente"

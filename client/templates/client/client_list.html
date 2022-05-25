@@ -12,7 +12,7 @@
 
 {% block content-header %}
 
-    <h1 class="m-0 text-dark">List of Clients</h1>
+    <h1 class="m-0 text-dark">Clientes</h1>
 
 {% endblock content-header %}
 
@@ -23,11 +23,11 @@
             <div class="row">
                 <div class="col-xs-4 col-sm-4 col-md-6">
                     <a href="{% url 'client:create' %}">
-                        <div class="btn btn-primary"><span class="fa fa-plus"> <span class="btn-custom-font">Create</span></span></div>
+                        <div class="btn btn-primary"><span class="fa fa-plus"> <span class="btn-custom-font">Crear</span></span></div>
                     </a>
                 </div>
                 <div class="box-tools col-xs-8 col-sm-8 col-md-6">
-                    <input id="table_search" type="text" class="form-control" placeholder="Search">
+                    <input id="table_search" type="text" class="form-control" placeholder="Buscar">
                 </div>
             </div>
         </div>
@@ -36,10 +36,10 @@
             <table id="clients_datatable" class="table table-hover">
                 <thead>
                     <tr>
-                        <th>Identification</th>
-                        <th>Names and Surnames</th>
+                        <th>DNI</th>
+                        <th>Nombre</th>
                         <th>Email</th>
-                        <th>Phone</th>
+                        <th>Telefono</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -47,7 +47,7 @@
                     {% for client in clients %}
                         <tr>
                             <td>{{ client.identification }}</td>
-                            <td>{{ client.name_surname }}</td>
+                            <td>{{ client.name }}</td>
                             <td>{{ client.email }}</td>
                             <td>{{ client.phone }}</td>
                             <td style="text-align: right">

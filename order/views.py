@@ -32,8 +32,8 @@ class DashboardView(LoginRequiredMixin, TemplateView):
         graphics_data = []
 
         start_date = datetime.today()
-        months_names = {1: 'January', 2: 'February', 3: 'March', 4: 'April', 5: 'May', 6: 'June', 7: 'July',
-                        8: 'August', 9: 'September', 10: 'October', 11: 'November', 12: 'December'}
+        months_names = {1: 'Enero', 2: 'Febrero', 3: 'Marzo', 4: 'Abril', 5: 'Mayo', 6: 'Junio', 7: 'Julio',
+                        8: 'Agosto', 9: 'Septiembre', 10: 'Octubre', 11: 'Noviembre', 12: 'Diciembre'}
 
         for i in range(12):
             last_day = monthrange(start_date.year, start_date.month)[1]

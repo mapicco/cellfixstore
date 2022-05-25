@@ -20,7 +20,7 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 form-group">
-                        <b>Are you sure you want to remove the client: {{ object.name_surname }}?</b>
+                        <b>Confirma la eliminacion del cliente: {{ object.name }}?</b>
                     </div>
                 </div>
             </div>
@@ -28,9 +28,9 @@
 
         <div class="box-footer" style="text-align: right">
             <a href="{% url 'client:list' %}">
-                <div class="btn btn-default"><span class="fas fa-ban"> <span class="btn-custom-font">Cancel</span></span></div>
+                <div class="btn btn-default"><span class="fas fa-ban"> <span class="btn-custom-font">Cancelar</span></span></div>
             </a>
-            <button type="submit" class="btn btn-danger"><span class="fas fa-trash"> <span class="btn-custom-font">Delete</span></span></button>
+            <button type="submit" class="btn btn-danger"><span class="fas fa-trash"> <span class="btn-custom-font">Eliminar</span></span></button>
         </div>
     </form>
 

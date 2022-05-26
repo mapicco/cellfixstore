@@ -9,7 +9,7 @@ A system for mobile workshops that allows you to keep track of work orders...
 
 ![CellFixStore_WorkOrders](static/img/work_orders.png)
 
-## Setup project
+## Setup project nnnnn
 
 ##### Create directory for your virtual environment
 ###### On your home directory create a folder to add virtualenv
